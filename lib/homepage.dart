@@ -256,7 +256,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 mainAxisAlignment: MainAxisAlignment.start,
                                 children: [
-                                  Text(
+                                  const Text(
                                     "Education",
                                     style: TextStyle(
                                         color: Colors.white,
@@ -292,7 +292,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                 mainAxisAlignment: MainAxisAlignment.start,
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  Text(
+                                  const Text(
                                     "Professional Background",
                                     style: TextStyle(
                                         color: Colors.white,
@@ -320,7 +320,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             ],
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 40,
                         ),
                         Padding(
@@ -329,6 +329,8 @@ class _HomeScreenState extends State<HomeScreen> {
                             children: [
                               const CircleAvatar(
                                 backgroundColor: Colors.white,
+                                backgroundImage:
+                                    AssetImage("assets/education.png"),
                               ),
                               const SizedBox(
                                 width: 15,
@@ -337,7 +339,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 mainAxisAlignment: MainAxisAlignment.start,
                                 children: [
-                                  Text(
+                                  const Text(
                                     "Trainings",
                                     style: TextStyle(
                                         color: Colors.white,
@@ -373,7 +375,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                 mainAxisAlignment: MainAxisAlignment.start,
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  Text(
+                                  const Text(
                                     "Certifications",
                                     style: TextStyle(
                                         color: Colors.white,
@@ -401,7 +403,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             ],
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 40,
                         ),
                         Padding(
@@ -419,7 +421,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
-                                  Text(
+                                  const Text(
                                     "Proficiencies/Skill-sets",
                                     style: TextStyle(
                                         color: Colors.white,
