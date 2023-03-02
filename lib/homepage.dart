@@ -232,18 +232,18 @@ class _HomeScreenState extends State<HomeScreen> {
                           style: TextStyle(
                             color: Colors.white,
                             fontWeight: FontWeight.bold,
-                            fontSize: 45,
+                            fontSize: 25,
                           ),
                         ),
                       ),
                     ],
                   ),
                   Padding(
-                    padding: const EdgeInsets.only(left: 55, top: 50),
+                    padding: const EdgeInsets.only(left: 65, right: 65),
                     child: Column(
                       children: [
                         Padding(
-                          padding: const EdgeInsets.all(88.0),
+                          padding: const EdgeInsets.only(left: 95, right: 95),
                           child: Row(
                             children: [
                               const CircleAvatar(
@@ -253,18 +253,16 @@ class _HomeScreenState extends State<HomeScreen> {
                                 width: 15,
                               ),
                               Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
                                 mainAxisAlignment: MainAxisAlignment.start,
                                 children: [
-                                  const Align(
-                                    alignment: Alignment.bottomRight,
-                                    child: Text(
-                                      "Education",
-                                      style: TextStyle(
-                                          color: Colors.white,
-                                          fontSize: 20,
-                                          fontWeight: FontWeight.bold,
-                                          letterSpacing: 2),
-                                    ),
+                                  Text(
+                                    "Education",
+                                    style: TextStyle(
+                                        color: Colors.white,
+                                        fontSize: 20,
+                                        fontWeight: FontWeight.bold,
+                                        letterSpacing: 2),
                                   ),
                                   const SizedBox(
                                     height: 5,
@@ -292,16 +290,15 @@ class _HomeScreenState extends State<HomeScreen> {
                               ),
                               Column(
                                 mainAxisAlignment: MainAxisAlignment.start,
+                                crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  const Align(
-                                    alignment: Alignment.bottomRight,
-                                    child: Text(
-                                      "Education",
-                                      style: TextStyle(
-                                          color: Colors.white,
-                                          fontSize: 20,
-                                          fontWeight: FontWeight.bold),
-                                    ),
+                                  Text(
+                                    "Professional Background",
+                                    style: TextStyle(
+                                        color: Colors.white,
+                                        fontSize: 20,
+                                        letterSpacing: 2,
+                                        fontWeight: FontWeight.bold),
                                   ),
                                   const SizedBox(
                                     height: 5,
@@ -313,6 +310,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                       "Higher Education & Fine Arts Institutes, Manufacturing & Service Industries, Executive Search Firms, Product Companies, and Non-Profit Organizations, accomplishing wide-ranging and specialized functions in Office Administration, ",
                                       style: TextStyle(
                                           color: Colors.white,
+                                          wordSpacing: 2,
                                           fontSize: 13,
                                           fontWeight: FontWeight.bold),
                                     ),
@@ -322,8 +320,11 @@ class _HomeScreenState extends State<HomeScreen> {
                             ],
                           ),
                         ),
+                        SizedBox(
+                          height: 40,
+                        ),
                         Padding(
-                          padding: const EdgeInsets.all(88.0),
+                          padding: const EdgeInsets.only(left: 88, right: 88),
                           child: Row(
                             children: [
                               const CircleAvatar(
@@ -333,18 +334,16 @@ class _HomeScreenState extends State<HomeScreen> {
                                 width: 15,
                               ),
                               Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
                                 mainAxisAlignment: MainAxisAlignment.start,
                                 children: [
-                                  const Align(
-                                    alignment: Alignment.bottomRight,
-                                    child: Text(
-                                      "Education",
-                                      style: TextStyle(
-                                          color: Colors.white,
-                                          fontSize: 20,
-                                          fontWeight: FontWeight.bold,
-                                          letterSpacing: 2),
-                                    ),
+                                  Text(
+                                    "Trainings",
+                                    style: TextStyle(
+                                        color: Colors.white,
+                                        fontSize: 20,
+                                        fontWeight: FontWeight.bold,
+                                        letterSpacing: 2),
                                   ),
                                   const SizedBox(
                                     height: 5,
@@ -372,16 +371,15 @@ class _HomeScreenState extends State<HomeScreen> {
                               ),
                               Column(
                                 mainAxisAlignment: MainAxisAlignment.start,
+                                crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  const Align(
-                                    alignment: Alignment.bottomRight,
-                                    child: Text(
-                                      "Education",
-                                      style: TextStyle(
-                                          color: Colors.white,
-                                          fontSize: 20,
-                                          fontWeight: FontWeight.bold),
-                                    ),
+                                  Text(
+                                    "Certifications",
+                                    style: TextStyle(
+                                        color: Colors.white,
+                                        letterSpacing: 2,
+                                        fontSize: 20,
+                                        fontWeight: FontWeight.bold),
                                   ),
                                   const SizedBox(
                                     height: 5,
@@ -393,6 +391,53 @@ class _HomeScreenState extends State<HomeScreen> {
                                       "Higher Education & Fine Arts Institutes, Manufacturing & Service Industries, Executive Search Firms, Product Companies, and Non-Profit Organizations, accomplishing wide-ranging and specialized functions in Office Administration, ",
                                       style: TextStyle(
                                           color: Colors.white,
+                                          fontSize: 13,
+                                          wordSpacing: 2,
+                                          fontWeight: FontWeight.bold),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
+                        ),
+                        SizedBox(
+                          height: 40,
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.only(left: 88, right: 88),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              const CircleAvatar(
+                                backgroundColor: Colors.white,
+                              ),
+                              const SizedBox(
+                                width: 15,
+                              ),
+                              Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  Text(
+                                    "Proficiencies/Skill-sets",
+                                    style: TextStyle(
+                                        color: Colors.white,
+                                        fontSize: 20,
+                                        fontWeight: FontWeight.bold,
+                                        letterSpacing: 2),
+                                  ),
+                                  const SizedBox(
+                                    height: 5,
+                                  ),
+                                  SizedBox(
+                                    width:
+                                        MediaQuery.of(context).size.width / 4,
+                                    child: const Text(
+                                      "Higher Education & Fine Arts Institutes, Manufacturing & Service Industries, Executive Search Firms, Product Companies, and Non-Profit Organizations, accomplishing wide-ranging and specialized functions in Office Administration, ",
+                                      style: TextStyle(
+                                          color: Colors.white,
+                                          wordSpacing: 2,
                                           fontSize: 13,
                                           fontWeight: FontWeight.bold),
                                     ),
