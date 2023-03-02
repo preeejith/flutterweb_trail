@@ -154,14 +154,19 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
             ]),
             Padding(
-              padding: const EdgeInsets.only(top: 10.0),
+              padding: EdgeInsets.only(
+                top: MediaQuery.of(context).size.height / 12,
+              ),
               child: Container(
                 width: MediaQuery.of(context).size.width,
                 color: Colors.white,
                 child: Padding(
-                  padding: const EdgeInsets.only(top: 19.0),
+                  padding: EdgeInsets.only(
+                    top: MediaQuery.of(context).size.height / 13,
+                  ),
                   child: Column(children: [
                     Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Column(
                           children: [
@@ -174,12 +179,16 @@ class _HomeScreenState extends State<HomeScreen> {
                                   letterSpacing: .5),
                             ),
                             Padding(
-                              padding: const EdgeInsets.only(
-                                  top: 10.0, left: 88, right: 20),
+                              padding: EdgeInsets.only(
+                                top: MediaQuery.of(context).size.height / 12,
+                                left: MediaQuery.of(context).size.height / 6,
+                                right: MediaQuery.of(context).size.height / 14,
+                              ),
                               child: ClipRRect(
-                                borderRadius: BorderRadius.circular(12),
+                                borderRadius: BorderRadius.circular(
+                                    MediaQuery.of(context).size.height / 12),
                                 child: Container(
-                                  height: 200,
+                                  width: MediaQuery.of(context).size.width / 9,
                                   color: Colors.grey.shade200,
                                   child: const Image(
                                     image: AssetImage("assets/profile.png"),
